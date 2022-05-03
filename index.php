@@ -22,11 +22,9 @@ $textOne = 'lorem ipsum diet sok ipest ucisar lam fux lames nieap das die dum ';
 
 <?php 
 
-
-
 $bannedWord = $_GET['censored'];
 
-$textCensored = str_replace('ipsum', '*****', $textOne);
+$textCensored = str_replace($bannedWord, '*****', $textOne);
 
 ?>
 
