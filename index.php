@@ -22,18 +22,20 @@ $textOne = 'lorem ipsum diet sok ipest ucisar lam fux lames nieap das die dum ';
 
 <?php 
 
-//$textCensored = 
+
 
 $bannedWord = $_GET['censored'];
-// echo($textOne);
+
+$textCensored = str_replace('ipsum', '*****', $textOne);
 
 ?>
 
 <h1> TESTO CENSURATO </h1>
 
 <p>
-    <?php echo($bannedWord); ?>
+    <?php echo($textCensored); ?>
 </p>
 <span>
-    La frase contiene <?php echo(strlen($bannedWord)); ?> caratteri
+    La frase contiene <?php echo(strlen($textCensored)); ?> caratteri
 </span>
+
